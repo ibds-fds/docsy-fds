@@ -1,4 +1,4 @@
-module github.com/google/docsy
+module github.com/ibds-fds/docsy-fds
 
 go 1.12
 
