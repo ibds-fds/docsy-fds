@@ -1,6 +1,6 @@
 {{ define "main" -}}
 <div class="td-content">
-  <h1>Not found</h1>
-  <p>Oops! This page doesn't exist. Try going back to the <a href="{{ "" | relURL }}">home page</a>.</p>
+  <h1>{{T "404_header"}}</h1>
+  <p>{{T "404_message"}} <a href="{{ "" | relURL }}">{{T "404_home_page"}}</a>.</p>
 </div>
 {{- end }}

@@ -1,3 +1,15 @@
+## Custom labels ####################################################
+
+# Decision Records
+[decision_posts_in]
+other = "Decisions in"
+
+# Kennisbank
+[kennisbank_posts_in]
+other = "Knowledge base updates in"
+
+## Originals ########################################################
+
 # UI strings. Buttons and similar.
 
 [ui_pager_prev]
@@ -88,3 +100,11 @@ other = "Was this page helpful?"
 other = "Yes"
 [feedback_negative]
 other = "No"
+
+# 404
+[404_header]
+other = "Not found"
+[404_message]
+other = "Oops! This page doesn't exist. Try going back to the"
+[404_home_page]
+other = "home page"

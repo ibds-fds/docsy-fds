@@ -1,4 +1,14 @@
+## Custom labels ####################################################
 
+# Decision Records
+[decision_posts_in]
+other = "Besluiten in"
+
+# Kennisbank
+[kennisbank_posts_in]
+other = "Kennisbank updates in"
+
+## Originals ########################################################
 
 # UI strings. Buttons and similar.
 
@@ -79,3 +89,11 @@ other = "Als je meer betrokken wil zijn door bij te dragen aan {{ .Site.Title }}
 other = "Je kunt meer informatie vinden over hoe bij te dragen aan {{ .Site.Title }} in onze"
 [community_guideline]
 other = "Richtlijnen voor bijdrage"
+
+# 404
+[404_header]
+other = "Niets gevonden"
+[404_message]
+other = "Oeps! Deze pagina bestaat niet. Probeer te starten vanaf de"
+[404_home_page]
+other = "home pagina"

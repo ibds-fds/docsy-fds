@@ -1,0 +1,159 @@
+// general f.ds.nl styling
+
+// decrease general font size
+$font-size-base: 0.9rem;
+
+/* 
+SCSS RGB
+- Created with https://coolors.co/
+- Based on IBDS colors
+*/
+// IBDS green
+$india-green: rgba(57, 135, 12, 1);
+// IBDS lightgreen
+$honeydew: #e1eddbff;
+// IBDS blue
+$honolulu-blue: #007bc7;
+$celadon: #BBD6AE;
+$sandy-brown: #F7eed0;
+$vanilla: #EDD996;
+$african-violet: #DABFFF;
+$light-yellow: #f7ffe0ff;
+$fairy-tale: #eac4d5ff;
+$english-violet: #654f6fff;
+$ultra-violet: #5c5d8dff;
+$light-cyan: #DDF7FF;
+$non-photo-blue: #99E7FF;
+$misty-rose: #FFE0D6;
+$atomic-tangerine: #FFA385;
+$burnt-sienna: #DE6B48;
+
+$ontwerp-blue: rgb(0, 123, 199);
+$ontwerp-blue-transparant: rgba(0, 123, 199, 0.2);
+$ontwerp-green: rgb(57, 135, 12);
+$ontwerp-green-transparant: rgba(57, 135, 12, 0.2);
+
+$capability-root: $ontwerp-blue-transparant;
+$capability-interop: $ontwerp-blue-transparant;
+$capability-interop-part:$ontwerp-blue-transparant;
+$capability-vertrouwen: $ontwerp-blue-transparant;
+$capability-vertrouwen-part: $ontwerp-blue-transparant;
+$capability-datawaarde:$ontwerp-blue-transparant;
+$capability-datawaarde-part:$ontwerp-blue-transparant;
+$capability-governance: $ontwerp-green-transparant;
+$capability-governance-part: $ontwerp-green-transparant;
+
+$capability-selected: $vanilla;
+
+// Docsy color settings
+$primary: $india-green;
+$secondary: $honeydew;
+$info: $ontwerp-blue;
+
+$link-color: $ontwerp-blue;
+
+
+// status badge
+
+.status-badge {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 16px;
+    padding: 4px 6px;
+    color: #424242;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    text-transform: uppercase;
+    height: 18px;
+    font-size: 0.74rem;
+    // font-weight: 500;
+    vertical-align: text-bottom;
+    justify-content: center;
+}
+
+.draft {
+    color: #424242;
+}
+
+.proposed {
+    color: #283593;
+}
+
+.rejected {
+    color: #f07d59;
+}
+
+.accepted {
+    color: #7cad7f;
+}
+
+.deprecated {
+    color: #917168;
+}
+
+.superseded {
+    color: #917168;
+}
+
+// capabilities shortcode
+
+.capability {
+
+    border-radius: 16px;
+    // width: 100%;
+    // padding: auto;
+    // margin: 0px auto;
+
+    &-root {
+        background-color: $capability-root;
+    }
+
+    &-governance {
+
+        background-color: $capability-governance;
+        text-align: center;
+        margin: auto 0px;
+
+        &-part {
+            background-color: $capability-governance-part;
+        }
+    }
+
+    &-interop {
+
+        background-color: $capability-interop;
+        text-align: center;
+        margin: auto 0px;
+
+        &-part {
+            background-color: $capability-interop-part;
+        }
+    }
+
+    &-vertrouwen {
+
+        background-color: $capability-vertrouwen;
+        text-align: center;
+        margin: auto 0px;
+
+        &-part {
+            background-color: $capability-vertrouwen-part;
+        }
+    }
+
+    &-datawaarde {
+
+        background-color: $capability-datawaarde;
+        text-align: center;
+        margin: auto 0px;
+
+        &-part {
+            background-color: $capability-datawaarde-part;
+        }
+    }
+
+    &-selected-true {
+        background-color: $capability-selected;
+    }
+
+}

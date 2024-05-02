@@ -36,6 +36,8 @@
 @import "shortcodes";
 @import "swagger";
 
+@import "fds";
+
 
 @if $td-enable-google-fonts {
   @import url($web-font-path);

@@ -1,0 +1,128 @@
+{{ $governanceSelected := eq (.Get "selected") "governance" | default "" }}
+{{ $bestuurlijkSelected := eq (.Get "selected") "bestuurlijk" | default "" }}
+{{ $operationeelSelected := eq (.Get "selected") "operationeel" | default "" }}
+{{ $beheerSelected := eq (.Get "selected") "beheer" | default "" }}
+{{ $interoperabiliteitSelected := eq (.Get "selected") "interoperabiliteit" | default "" }}
+{{ $modellenSelected := eq (.Get "selected") "modellen" | default "" }}
+{{ $dataservicesSelected := eq (.Get "selected") "dataservices" | default "" }}
+{{ $traceerbaarheidSelected := eq (.Get "selected") "traceerbaarheid" | default "" }}
+{{ $vertrouwenSelected := eq (.Get "selected") "vertrouwen" | default "" }}
+{{ $identiteitSelected := eq (.Get "selected") "identiteit" | default "" }}
+{{ $toegangSelected := eq (.Get "selected") "toegang" | default "" }}
+{{ $veiligheidSelected := eq (.Get "selected") "veiligheid" | default "" }}
+{{ $datawaardeSelected := eq (.Get "selected") "datawaarde" | default "" }}
+{{ $metadataSelected := eq (.Get "selected") "metadata" | default "" }}
+{{ $verantwoordingSelected := eq (.Get "selected") "verantwoording" | default "" }}
+{{ $publicatieSelected := eq (.Get "selected") "publicatie" | default "" }}
+
+<div class="m-3">
+    <p class="small p-1 m-0">(klik aan om te navigeren)</p>
+    <div class="p-2 m-0 capability capability-root ">
+        <a class="text-dark" href="/kennisbank/capabilities/">
+            <div><b>Capabilities</b></div>
+            <div>De capabilities van het federatief datastelsel.</div>
+        </a>
+        <div class="container-fluid row">
+            <div
+                class="col p-2 m-1 capability capability-interop capability-selected-{{ $interoperabiliteitSelected }}">
+                <a class="text-dark" href="/kennisbank/capabilities/interoperabiliteit/">
+                    <div><b>Interoperabiliteit</b></div>
+                </a>
+                <div class="container-fluid column">
+                    <div class="p-2 m-1 capability capability-interop-part capability-selected-{{ $modellenSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/interoperabiliteit/modellen/">
+                            <div><b>Modellen</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-interop-part capability-selected-{{ $dataservicesSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/interoperabiliteit/dataservices/">
+                            <div><b>Dataservices</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-interop-part capability-selected-{{ $traceerbaarheidSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/interoperabiliteit/traceerbaarheid/">
+                            <div><b>Traceerbaarheid</b></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2 m-1 capability capability-vertrouwen capability-selected-{{ $vertrouwenSelected }}">
+                <a class="text-dark" href="/kennisbank/capabilities/vertrouwen/">
+                    <div><b>Vertrouwen</b></div>
+                </a>
+                <div class="container-fluid column">
+                    <div
+                        class="p-2 m-1 capability capability-vertrouwen-part capability-selected-{{ $identiteitSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/vertrouwen/identiteit/">
+                            <div><b>Identiteit</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-vertrouwen-part capability-selected-{{ $toegangSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/vertrouwen/toegang/">
+                            <div><b>Toegang</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-vertrouwen-part capability-selected-{{ $veiligheidSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/vertrouwen/veiligheid/">
+                            <div><b>Veiligheid</b></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2 m-1 capability capability-datawaarde capability-selected-{{ $datawaardeSelected }}">
+                <a class="text-dark" href="/kennisbank/capabilities/datawaarde/">
+                    <div><b>Datawaarde</b></div>
+                </a>
+                <div class="container-fluid column">
+                    <div
+                        class="p-2 m-1 capability capability-datawaarde-part capability-selected-{{ $metadataSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/datawaarde/metadata/">
+                            <div><b>Metadata</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-datawaarde-part capability-selected-{{ $verantwoordingSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/datawaarde/verantwoording/">
+                            <div><b>Verantwoording</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-datawaarde-part capability-selected-{{ $publicatieSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/datawaarde/publicatie/">
+                            <div><b>Publicatie</b></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-2 m-1 capability capability-governance capability-selected-{{ $governanceSelected }}">
+                <a class="text-dark" href="/kennisbank/capabilities/governance/">
+                    <div><b>Governance</b></div>
+                </a>
+                <div class="container-fluid column">
+                    <div
+                        class="p-2 m-1 capability capability-governance-part capability-selected-{{ $bestuurlijkSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/governance/bestuurlijk/">
+                            <div><b>Bestuurlijk</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-governance-part capability-selected-{{ $operationeelSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/governance/operationeel/">
+                            <div><b>Operationeel</b></div>
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 m-1 capability capability-governance-part capability-selected-{{ $beheerSelected }}">
+                        <a class="text-dark" href="/kennisbank/capabilities/governance/beheer/">
+                            <div><b>Beheer</b></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
